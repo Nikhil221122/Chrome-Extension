@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+
+  <title>Meeting Transcriber</title>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <div class="container">
+
+    <h1>Meeting Transcriber</h1>
+
+    <p id="status">Status: Stopped</p>
+
+    <div class="buttons">
+      <button id="startButton">Start Listening</button>
+      <button id="stopButton">Stop</button>
+      <button id="copyButton">Copy All</button>
+      <button id="clearButton">Clear</button>
+    </div>
+
+    <textarea
+      id="transcript"
+      placeholder="Live transcription will appear here..."
+    ></textarea>
+
+    <p id="interimText"></p>
+
+  </div>
+
+  <script src="transcriber.js"></script>
+
+</body>
+</html>
